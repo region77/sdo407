@@ -15,16 +15,16 @@ const Menu = () => {
   return (
     <div>
       <div className='nav flex-column nav-pills' aria-orientation='vertical'>
-        <NavLink className='nav-link' to='profile'>
+        <NavLink className='nav-link' to='/profile'>
           Профиль
         </NavLink>
-        <NavLink className='nav-link' to='messages'>
+        <NavLink className='nav-link' to='/messages'>
           Сообщения
         </NavLink>
-        <NavLink className='nav-link' to='settings'>
+        <NavLink className='nav-link' to='/settings'>
           Настройки
         </NavLink>
-        <NavLink className='nav-link' to='friends'>
+        <NavLink className='nav-link' to='/friends'>
           Мои друзья
         </NavLink>
       </div>
