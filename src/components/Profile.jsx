@@ -1,10 +1,13 @@
 import React from 'react';
 
 const Profile = (props) => {
-   let user = props.function();
-   return <div className = "row">
+   let userId = window.location.pathname.split("/")[2];//чтение из адресной строки разделитель слэш, 2й элемент после слэша
+   let user = props.function(userId);
+
+   console.log(userId);
+   return (<div className="row">
       <div className="col-sm-3">
-         <img src={user.avatar} alt="" width='90%'/>
+         <img src={user.avatar} alt="" width='90%' />
       </div>
       <div className="col-sm-9">
          <h1>{user.name} {user.lastname}</h1>
@@ -15,6 +18,7 @@ const Profile = (props) => {
       </div>
    </div>
    //return <h1>Это страница с профилем</h1>;
-}
+   )
+};
 
 export default Profile;
